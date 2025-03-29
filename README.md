@@ -1,7 +1,7 @@
 # Chatalia
 
 <div align="center">
-  <img src="./src/assets/logo.png" alt="Chatalia Logo" width="120" height="120"/>
+  <img src="./src/assets/logo.png" alt="Chatalia Logo" width="150" height="150"/>
   
   <h1>A Modern, Local-First AI Chat Interface</h1>
   
@@ -49,7 +49,7 @@
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/MegalithOfficial/chatalia
+   git clone https://github.com/MegalithOfficial/Chatalia
    cd chatalia
    ```
 
