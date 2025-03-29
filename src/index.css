@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+   html {
+      @apply h-full font-sans antialiased;
+      color-scheme: dark;
+   }
+
+   body {
+      @apply h-full bg-neutral-950 text-neutral-100; /* Near-black bg */
+   }
+
+   #root {
+      @apply h-full;
+   }
+
+   input:-webkit-autofill,
+   input:-webkit-autofill:hover,
+   input:-webkit-autofill:focus,
+   textarea:-webkit-autofill,
+   textarea:-webkit-autofill:hover,
+   textarea:-webkit-autofill:focus,
+   select:-webkit-autofill,
+   select:-webkit-autofill:hover,
+   select:-webkit-autofill:focus {
+      -webkit-text-fill-color: theme('colors.neutral.100');
+      /* Use a dark input background color */
+      -webkit-box-shadow: 0 0 0px 1000px theme('colors.neutral.800') inset;
+      transition: background-color 5000s ease-in-out 0s;
+   }
+}
+
+   @layer components {
+      .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+      .custom-scrollbar::-webkit-scrollbar-track { @apply bg-transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { @apply bg-neutral-700 rounded; }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover { @apply bg-neutral-600; }
+      /* Firefox */
+      .custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: theme('colors.neutral.700') transparent; /* Dark scrollbar */
+      }
+    }
